@@ -1,9 +1,12 @@
 import React from 'react'
+import Hero from '../components/Products/Productsl.jsx'
 
-const products = () => {
+const Products = () => {
   return (
-    <div>products</div>
+    <div>
+      <Hero/>
+    </div>
   )
 }
 
-export default products
+export default Products

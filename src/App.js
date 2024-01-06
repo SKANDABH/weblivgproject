@@ -7,6 +7,8 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Services from './pages/Service';
 import Products from './pages/Products';
+import Login from './pages/Login';
+import Sign from './pages/Sign';
 
 function App() {
   // Assuming you need to manage a menu state
@@ -21,8 +23,11 @@ function App() {
           <Route path="/About" element={<About />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Service" element={<Services />} />
+          <Route path="/Login" element={<Login />} />
           <Route path="/Products" element={<Products />} />
-          <Route path=":ProductsId" element={<Products />} />
+          <Route path="/Signup" element={<Sign />} />
+
+          {/* <Route path=":ProductsId" element={<Products />} /> */}
           <Route path="/cart" element={<cart />} /> {/* Ensure cart component is correctly imported */}
         </Routes>
         <Footer menu={menu} setMenu={setMenu} />
